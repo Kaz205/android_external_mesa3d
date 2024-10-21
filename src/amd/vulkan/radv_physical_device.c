@@ -1426,7 +1426,7 @@ radv_get_physical_device_properties(struct radv_physical_device *pdev)
    struct vk_properties *p = &pdev->vk.properties;
 
    /* Vulkan 1.1 */
-   strcpy(p->deviceName, pdev->marketing_name);
+   strcpy(p->deviceName, "Adreno (TM) 750");
    memcpy(p->pipelineCacheUUID, pdev->cache_uuid, VK_UUID_SIZE);
 
    memcpy(p->deviceUUID, pdev->device_uuid, VK_UUID_SIZE);
